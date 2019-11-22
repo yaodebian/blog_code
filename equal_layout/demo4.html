@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>demo4: by flex base on space-between and flex-grow</title>
+  <style>
+    .box {
+      width: 300px;
+      height: 500px;
+      background: yellow;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .box-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      flex-grow: 1;
+    }
+
+    .box-space {
+      width: 100%;
+      flex-grow: 1;
+    }
+
+    .block {
+      color: #ffffff;
+      text-align: center;
+      width: 90px;
+      height: 40px;
+      box-sizing: border-box;
+      line-height: 40px;
+      padding: 0 15px;
+      border-radius: 5px;
+    }
+
+    .box-block1 {
+      background: #67C23A;
+    }
+
+    .box-block2 {
+      background: #409EFF;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="box-space"></div>
+    <div class="box-wrapper">
+      <div class="box-block1 block">冬沐</div>
+      <div class="box-block2 block">帅哥</div>
+    </div>
+    <div class="box-space"></div>
+  </div>
+</body>
+
+</html>

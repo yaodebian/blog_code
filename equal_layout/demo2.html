@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>demo2: by percentage height base on demo1 layout</title>
+  <style>
+    .box {
+      width: 300px;
+      height: 500px;
+      background: yellow;
+    }
+
+    .wrapper {
+      height: 40px;
+      position: relative;
+    }
+
+    .block {
+      color: #ffffff;
+      text-align: center;
+      width: 90px;
+      height: 40px;
+      box-sizing: border-box;
+      line-height: 40px;
+      padding: 0 15px;
+      border-radius: 5px;
+      display: inline-block;
+      position: absolute;
+      left: 50%;
+      margin-left: -45px;
+    }
+
+    .box-block1 {
+      background: #67C23A;
+      bottom: 0;
+    }
+
+    .box-block2 {
+      background: #409EFF;
+      top: 50%;
+      margin-top: -20px;
+    }
+
+    .box-wrapper1 {
+      height: calc(33.3% + 13.3px);
+    }
+
+    .box-wrapper2 {
+      height: calc(66.6% - 13.3px);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="box-wrapper1 wrapper">
+      <div class="box-block1 block">冬沐</div>
+    </div>
+    <div class="box-wrapper2 wrapper">
+      <div class="box-block2 block">帅哥</div>
+    </div>
+  </div>
+</body>
+
+</html>
