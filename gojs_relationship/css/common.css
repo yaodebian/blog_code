@@ -1,0 +1,27 @@
+/* 自定义滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background: transparent
+}
+
+html ::-webkit-scrollbar-track {
+  background: transparent
+}
+
+html ::-webkit-button {
+  display: none
+}
+
+html ::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #aaaaaa;
+}
+
+/* 选中浏览器存储用户名input样式 */
+input:-internal-autofill-previewed,
+input:-internal-autofill-selected {
+  -webkit-text-fill-color: #FFFFFF !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+}

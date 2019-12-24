@@ -1,0 +1,307 @@
+@charset "UTF-8";
+
+/**
+* reset.css
+* 重置浏览器的常用样式
+* zwl 2014-9-10
+* @version 1.0.3
+* 去除了对ie6之前的低版本样式支持
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+q,
+blockquote,
+pre,
+a,
+abbr,
+address,
+acronym,
+big,
+cite,
+code,
+del,
+s,
+strike,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+samp,
+small,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ul,
+li,
+fieldset,
+lengend,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+figure,
+button,
+input,
+textarea,
+hr,
+th,
+td {
+  /* table elements 表格元素 */
+  margin: 0;
+  padding: 0;
+}
+
+address,
+cite,
+dfn,
+em,
+var {
+  font-style: normal;
+}
+
+/* 将斜体扶正 */
+code,
+kbd,
+pre,
+samp,
+tt {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* 统一等宽字体 */
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  outline: none;
+}
+
+/* 清除轮廓 */
+i {
+  font-style: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+img {
+  border: 0;
+  /* 去除在 IE9/9 中出现的边框 */
+  -ms-interpolation-mode: bicubic;
+  /*解决ie7下图片缩放的失真问题*/
+}
+
+/*选择背景无色*/
+::-moz-selection {
+  background-color: #ccc;
+  color: #fff;
+}
+
+::selection {
+  background-color: #ccc;
+  color: #fff;
+}
+
+::-moz-selection {
+  color: #fff;
+  background-color: #ccc;
+}
+
+.clr:after {
+  clear: both;
+  display: block;
+  content: '';
+}
+
+body {
+  font: 12px "Microsoft Yahei", "Hiragino Sans GB", "Helvetica Neue", sans-serif, "SimHei", Arial;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-font-smoothing: antialiased;
+}
+
+div,
+ul,
+li {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* 
+	备用样式
+	以下样式功能自行选择 使用
+
+	1. webkit 移动端选中去高光
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+	2. ios 设备自定义超出滚动条硬件流畅滚动
+	-webkit-overflow-scrolling: touch;
+
+ */
+/**
+ 
+ @Name: layui
+ @Author: 贤心
+ @Site: www.layui.com
+ 
+ */
+/** 初始化 **/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td,
+form,
+pre {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+img {
+  display: inline-block;
+  border: none;
+  vertical-align: middle;
+}
+
+li {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: 400;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+}
+
+input,
+button,
+textarea,
+select,
+optgroup,
+option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  outline: 0;
+}
+
+pre {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
+/** 初始化全局标签 **/
+body {
+  line-height: 24px;
+  font: 14px Helvetica Neue, Helvetica, PingFang SC, \5FAE\8F6F\96C5\9ED1, Tahoma, Arial, sans-serif;
+}
+
+hr {
+  height: 1px;
+  margin: 10px 0;
+  border: 0;
+  clear: both;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #777;
+}
+
+a cite {
+  font-style: normal;
+  *cursor: pointer;
+}
